@@ -1,21 +1,13 @@
 def main():
-        num1=input("Enter first number: ")
-        num2=input("Enter second number: ")
-        op=time=input("Choose the operation(+, -, /, *): ")
-        listOp=["+","-","/","*"]
-        if (num1.isdigit and num2.isdigit()):
-                if(op=="+"):
-                        print("The answer is ", (int(num1)+int(num2)))
-                elif(op=="-"):
-                        print("The answer is ", (int(num1)-int(num2)))
-                elif(op=="*"):
-                        print("The answer is ", (int(num1)*int(num2)))
-                elif(op=="/"):
-                        print("The answer is ", (int(num1)/int(num2)))
-                else:
-                        print("the operation is not valid")
-        else:
-                print("the numbers are invalid")
+        time=input("Enter a number from 1 to 12: ")
+        items=input("Enter a noun (plural): ")
+        name=input("Enter a name: ")
+        scream=input("Enter any sentence: ")
+        action=input("Enter a verb: ")
+        print("""It was %s o'clock when I heard a knock at the door.
+I opened the door and there was a box full of %s with a note saying "From Mr. %s."
+Just as I closed the door I heard a scream "%s."
+I froze in place and all I could do was %s.""" % (time, items,name.title(), scream.upper(), action))
 
 if __name__ == '__main__':
 	main()
